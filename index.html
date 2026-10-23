@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Empire</title>
+</head>
+<body>
+
+    <h1>🎲 Roll A Dice!</h1>
+    <h2>Take your chance!</h2>
+
+    <!-- First box: Dice Roller -->
+    <fieldset>
+        <legend>Dice Roller</legend>
+
+        <label for="diceCount">Choose number of dice:</label>
+        <select id="diceCount" name="diceCount">
+            <option value="1">1 Die</option>
+            <option value="2">2 Dice</option>
+        </select>
+
+        <p id="diceResult">Your dice result will appear here.</p>
+
+        <button type="button" id="rollButton">Roll Dice</button>
+    </fieldset>
+
+    <!-- Second box: Roll History -->
+    <fieldset>
+        <legend>Roll History</legend>
+
+        <h3>Previous 10 Rolls</h3>
+        <p>Single-die and two-dice rolls will both appear here.</p>
+
+        <ol id="rollHistory">
+            <li>No rolls yet.</li>
+        </ol>
+
+        <button type="button" id="clearHistoryButton">Clear History</button>
+
+        <p>History starts again after every 10 rolls.</p>
+    </fieldset>
+
+    <!-- Footer: Project credits -->
+    <hr>
+    <footer>
+        <p>Made by Thippana Sathvik</p>
+        <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+</body>
+</html>
