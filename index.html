@@ -3,50 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Empire</title>
+    <title>Roll A Dice! | Dice Empire</title>
+
+    <!-- CSS controls the design of the website. -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript makes the buttons and dice work. -->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-
-    <h1>🎲 Roll A Dice!</h1>
+    <h1>Roll A Dice!</h1>
     <h2>Take your chance!</h2>
 
-    <!-- First box: Dice Roller -->
+    <!-- Box 1: Dice Roller -->
     <fieldset>
         <legend>Dice Roller</legend>
 
         <label for="diceCount">Choose number of dice:</label>
-        <select id="diceCount" name="diceCount">
+        <select id="diceCount">
             <option value="1">1 Die</option>
             <option value="2">2 Dice</option>
         </select>
 
-        <p id="diceResult">Your dice result will appear here.</p>
-
+        <div id="diceDisplay" aria-label="Dice faces"></div>
+        <p id="diceResult" aria-live="polite">Click Roll Dice to start!</p>
         <button type="button" id="rollButton">Roll Dice</button>
     </fieldset>
 
-    <!-- Second box: Roll History -->
+    <!-- Box 2: History of the last ten roll events in each batch -->
     <fieldset>
         <legend>Roll History</legend>
-
         <h3>Previous 10 Rolls</h3>
-        <p>Single-die and two-dice rolls will both appear here.</p>
+        <p>Single-die and two-dice rolls both appear here.</p>
 
-        <ol id="rollHistory">
-            <li>No rolls yet.</li>
-        </ol>
+        <div id="historyArea" aria-live="polite">
+            <!-- An empty history has NO list number. -->
+            <p id="emptyHistory">No rolls yet!</p>
+            <ol id="rollHistory" hidden></ol>
+        </div>
 
         <button type="button" id="clearHistoryButton">Clear History</button>
-
         <p>History starts again after every 10 rolls.</p>
     </fieldset>
 
-    <!-- Footer: Project credits -->
+    <!-- Credits at the bottom of the page -->
     <hr>
     <footer>
         <p>Made by Thippana Sathvik</p>
         <p>Built with HTML, CSS and JavaScript</p>
     </footer>
-
 </body>
 </html>
