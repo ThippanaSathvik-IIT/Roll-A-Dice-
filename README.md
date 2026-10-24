@@ -2,6 +2,13 @@
 
 A simple dice rolling website for the Programming Club induction.
 
+## Live Website
+
+Play Roll A Dice! here:
+
+[Open Roll A Dice!](https://roll-a-dice-brown.vercel.app/)
+
+
 ## Features
 
 Choosing 1 Die or 2 Dice.The number of visible dice changes immediately.
