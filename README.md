@@ -27,7 +27,7 @@ Note: The current design intentionally shows dice results instantly, without a r
 
 ## How to Run
 
-1. Open the `Dice-Empire` folder in VS Code.
+1. Open the `Roll A Dice!` folder in VS Code.
 2. Open `index.html` with **Live Server**, or double-click `index.html` to open it in Chrome.
 3. Choose one or two dice and press **Roll Dice**.
 
